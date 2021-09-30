@@ -11,6 +11,6 @@ export class Aktie extends Gegenstand {
     text += super.toString();
     text += "\nUnternehmen: " + "\t" + this.unternehmen;
     text += "\nNennwert: " + "\t" + this.nennwert;
-    return null;
+    return text;
   }
 }

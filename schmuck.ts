@@ -10,7 +10,7 @@ export class Schmuck extends Gegenstand{
     let text: string = "\n\nSchmuck-Stück:";
     text += super.toString();
     text += "\nBezeichnung: " + "\t" + this.bezeichnung;
-    return null;
+    return text;
   }
   
 }
