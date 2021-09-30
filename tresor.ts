@@ -56,8 +56,9 @@ export class Tresor {
   }
 
   toString(): string {
-    let text: string = "\n\nTRESORINHALT:";
+    let text: string = "\nTRESORINHALT:";
     this.gegenstaende.forEach(g => text += g.toString());
+    text += "\n\nWert der Gegenstände im Tresor: " +this.berechneGesamtwert();
     return text;
   }
 

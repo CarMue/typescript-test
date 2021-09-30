@@ -18,3 +18,31 @@ tresor.addGegenstand(a2);
 tresor.addGegenstand(s1);
 
 console.log(tresor.toString());
+
+try {
+  tresor.getGegenstand_v3(2);
+} catch (error) {
+  console.log(error.name + ": " + error.message );
+}
+
+try {
+  tresor.getGegenstand_v3(4);
+} catch (error) {
+  console.log(error.name + ": " + error.message);
+}
+
+try {
+  tresor.removeGegenstand(a2);
+} catch(error) {
+  console.log(error.name + ": " + error.message);
+}
+
+console.log(tresor.toString());
+
+try {
+  tresor.removeGegenstand(a2);
+} catch(error) {
+  console.log(error.name + ": " + error.message);
+}
+
+console.log(tresor.toString());
